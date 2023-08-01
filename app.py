@@ -5,7 +5,7 @@ import plotly.graph_objects as go  # pip install plotly
 import streamlit as st  # pip install streamlit
 from streamlit_option_menu import option_menu  # pip install streamlit-option-menu
 
-import database as db  # local import
+import deta as db  # local import
 
 # -------------- SETTINGS --------------
 incomes = ["Salary", "Blog", "Other Income"]
