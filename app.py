@@ -1,5 +1,5 @@
 import os
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 from deta import Deta
 
 import calendar  # Core Python Module
@@ -11,7 +11,13 @@ from streamlit_option_menu import option_menu  # pip install streamlit-option-me
 
 
 
-load_dotenv(".env")
+# load_dotenv(".env")
+with open('.env') as f:
+    for line in f:
+        if line.startswith('#') or not line.strip():
+            continue
+        key, value = line.strip().split('=', 1)
+        os.environ[key] = value
 DETA_KEY = os.getenv("DETA_KEY") 
 
 
