@@ -10,7 +10,7 @@ from streamlit_option_menu import option_menu  # pip install streamlit-option-me
 
 
 
-DETA_KEY = "c0dh1rmjcv6_E7pyW25vSsmQsUKSFpUqobYk6RHGqSVG"
+DETA_KEY = ""
 
 deta = Deta(DETA_KEY)
 db = deta.Base("monthly_reports")
